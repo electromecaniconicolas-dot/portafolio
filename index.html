@@ -1,130 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio Profesional</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolas Mendieta | Portafolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="/portafolio/styles.css" />
 </head>
+<body>
 
-<body class="bg-gray-100 text-gray-900">
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">NM</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Inicio</a></li>
+      <li><a href="#about" class="nav-link">Sobre mí</a></li>
+      <li><a href="#projects" class="nav-link">Proyectos</a></li>
+      <li><a href="#contact" class="nav-link">Contacto</a></li>
+    </ul>
+  </nav>
 
-    <!-- NAV -->
-    <header class="bg-white shadow">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold">Mi Portafolio</h1>
-            <nav class="space-x-6">
-                <a href="#proyectos" class="hover:underline">Proyectos</a>
-                <a href="#habilidades" class="hover:underline">Habilidades</a>
-                <a href="#sobre-mi" class="hover:underline">Sobre Mí</a>
-                <a href="#contacto" class="hover:underline font-semibold">Contacto</a>
-            </nav>
-        </div>
-    </header>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="info-card fade">
+      <h1>Hola, soy <span>Nicolas Mendieta</span></h1>
+      <p>
+        Desarrollador Full Stack enfocado en crear aplicaciones web modernas,
+        funcionales y con una experiencia de usuario limpia.
+      </p>
+      <div class="buttons">
+        <a href="#projects" class="btn primary">Ver proyectos</a>
+        <a href="#contact" class="btn secondary">Contacto</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- HERO -->
-    <section class="bg-gray-50 py-20 text-center">
-        <h2 class="text-5xl font-bold mb-4">Diseñador & Desarrollador</h2>
-        <p class="text-lg max-w-2xl mx-auto text-gray-600">
-            Creo experiencias digitales funcionales, atractivas y memorables.  
-            Explora mis mejores proyectos y descubre cómo puedo aportar valor a tu equipo.
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-container fade">
+
+      <div class="content-card">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy un desarrollador Full Stack con formación en mantenimiento
+          electromecánico industrial, apasionado por crear soluciones web
+          completas y eficientes. Mi principal lenguaje es Python, con
+          experiencia en JavaScript, React, Express.js, HTML, CSS y API REST.
         </p>
+      </div>
 
-        <div class="mt-8">
-            <a href="#proyectos" 
-               class="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
-               Ver Proyectos Destacados
-            </a>
+      <div class="content-card">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-badge">Python</div>
+          <div class="skill-badge">JavaScript</div>
+          <div class="skill-badge">React</div>
+          <div class="skill-badge">Express.js</div>
+          <div class="skill-badge">HTML</div>
+          <div class="skill-badge">CSS</div>
+          <div class="skill-badge">API REST</div>
+          <div class="skill-badge">Java</div>
         </div>
-    </section>
+      </div>
 
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="py-20 max-w-6xl mx-auto px-4">
-        <h3 class="text-3xl font-bold mb-8 text-center">Proyectos Destacados</h3>
+    </div>
+  </section>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Proyecto 1 -->
-            <div class="bg-white p-5 shadow rounded-lg">
-                <img src="https://via.placeholder.com/400x250" class="rounded mb-4" alt="Proyecto 1">
-                <h4 class="font-bold text-xl mb-2">ejemplo 3</h4>
-                <p class="text-gray-600 text-sm">
-                    Desarrollo de plataforma funcional con UI intuitiva, centrada en eficiencia y simplicidad.
-                </p>
-                <a href="#" class="text-blue-600 font-semibold underline mt-3 block">Ver más</a>
-            </div>
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="content-card fade">
+      <h2>Proyectos</h2>
 
-            <!-- Proyecto 2 -->
-            <div class="bg-white p-5 shadow rounded-lg">
-                <img src="https://via.placeholder.com/400x250" class="rounded mb-4" alt="Proyecto 2">
-                <h4 class="font-bold text-xl mb-2">ejemplo 2</h4>
-                <p class="text-gray-600 text-sm">
-                    Aplicación moderna con enfoque en experiencia de usuario y rendimiento.
-                </p>
-                <a href="#" class="text-blue-600 font-semibold underline mt-3 block">Ver más</a>
-            </div>
-
-            <!-- Proyecto 3 -->
-            <div class="bg-white p-5 shadow rounded-lg">
-                <img src="https://via.placeholder.com/400x250" class="rounded mb-4" alt="Proyecto 3">
-                <h4 class="font-bold text-xl mb-2">ejemplo 1X</h4>
-                <p class="text-gray-600 text-sm">
-                    Proceso creativo y diseño visual que transmite claridad, estilo y propósito.
-                </p>
-                <a href="#" class="text-blue-600 font-semibold underline mt-3 block">Ver más</a>
-            </div>
+      <div class="projects-grid">
+        <div class="project-card fade">
+          <h3>HospeDATE</h3>
+          <p>Plataforma de gestión hospitalaria desarrollada en equipo.</p>
+          <a href="https://github.com/Generatino2025/hospeDATE-grupo-08"
+             target="_blank" class="btn secondary">GitHub</a>
         </div>
-    </section>
 
-    <!-- HABILIDADES -->
-    <section id="habilidades" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h3 class="text-3xl font-bold mb-8 text-center">Habilidades</h3>
-
-            <div class="grid md:grid-cols-2 gap-10">
-                <div>
-                    <h4 class="font-bold text-xl mb-2">Desarrollo</h4>
-                    <ul class="list-disc ml-6 text-gray-700">
-                        <li>Java, Spring Boot</li>
-                        <li>JavaScript, React</li>
-                        <li>HTML, CSS, Tailwind</li>
-                        <li>APIs & Arquitectura</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="font-bold text-xl mb-2">Diseño</h4>
-                    <ul class="list-disc ml-6 text-gray-700">
-                        <li>Prototipado en Figma</li>
-                        <li>Sistemas de diseño</li>
-                        <li>Accesibilidad Web</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="project-card fade">
+          <h3>Tenazos</h3>
+          <p>Proyecto colaborativo enfocado en lógica de programación.</p>
+          <a href="https://github.com/SebastianSL96/Tenazos"
+             target="_blank" class="btn secondary">GitHub</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- SOBRE MI -->
-    <section id="sobre-mi" class="py-20 max-w-4xl mx-auto px-4 text-center">
-        <h3 class="text-3xl font-bold mb-6">Sobre Mí</h3>
-        <p class="text-gray-700 leading-relaxed">
-            Soy un apasionado del diseño y desarrollo. Me inspiran los retos y disfruto crear soluciones
-            que combinen estética, funcionalidad y tecnología.  
-            Mi objetivo es aportar a proyectos que impulsen ideas innovadoras y mejoren la vida de las personas.
-        </p>
-    </section>
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="content-card fade">
+      <h2>Contacto</h2>
+      <p>¿Te interesa trabajar conmigo o hablar sobre un proyecto?</p>
+      <div class="buttons">
+        <a href="mailto:electromecaniconicolas@gmail.com" class="btn primary">Email</a>
+        <a href="https://github.com/electromecaniconicolas-dot"
+           target="_blank" class="btn secondary">GitHub</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="py-20 bg-gray-900 text-white text-center">
-        <h3 class="text-3xl font-bold mb-4">Contacto</h3>
-        <p class="text-gray-300 mb-6">
-            ¿Quieres colaborar o tienes una propuesta? Estoy disponible.
-        </p>
+  <footer>
+    © <span id="year"></span> Nicolas Mendieta
+  </footer>
 
-        <a href="mailto:electromecaniconicolas@gmail.com" 
-           class="px-8 py-3 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-200 transition">
-           Enviar Email
-        </a>
-    </section>
-
+  <script src="/portafolio/app.js"></script>
 </body>
 </html>
