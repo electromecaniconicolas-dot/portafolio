@@ -1,47 +1,60 @@
-// ===== AÑO AUTOMÁTICO =====
-document.getElementById("year").textContent = new Date().getFullYear();
+// año automático
+document.getElementById("year").textContent=new Date().getFullYear();
 
-// ===== SCROLL REVEAL =====
-const faders = document.querySelectorAll(".fade");
+// typing
+const text="Desarrollador Full Stack";
+let index=0;
 
-const appearOptions = {
-  threshold: 0.2,
-};
+function type(){
+if(index<text.length){
+document.getElementById("typing-text").textContent+=text.charAt(index);
+index++;
+setTimeout(type,70);
+}
+}
+type();
 
-const appearOnScroll = new IntersectionObserver(function (
-  entries,
-  observer
-) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add("show");
-    observer.unobserve(entry.target);
-  });
-},
-appearOptions);
+// navbar móvil
+const toggle=document.querySelector(".menu-toggle");
+const nav=document.querySelector(".nav-links");
 
-faders.forEach(fade => {
-  appearOnScroll.observe(fade);
+toggle.addEventListener("click",()=>{
+nav.classList.toggle("active");
 });
 
-// ===== NAV LINK ACTIVO =====
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-link");
+// modal proyectos
+const modal=document.getElementById("projectModal");
 
-window.addEventListener("scroll", () => {
-  let current = "";
+function openModal(project){
 
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120;
-    if (scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-  });
+modal.style.display="flex";
 
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
+if(project==="hospe"){
+document.getElementById("modalTitle").textContent="HospeDATE";
+document.getElementById("modalDescription").textContent="Sistema hospitalario.";
+}
+
+if(project==="clima"){
+document.getElementById("modalTitle").textContent="Clima";
+document.getElementById("modalDescription").textContent="App del clima con APIs.";
+}
+
+}
+
+function closeModal(){
+modal.style.display="none";
+}
+
+// Scroll animation con Intersection Observer
+document.addEventListener('DOMContentLoaded', function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 });
+

@@ -1,118 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nicolas Mendieta | Portafolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolas Mendieta | Portafolio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
-    rel="stylesheet"
-  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="/styles.css" />
-</head>
-<body>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">NM</div>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">NM</div>
-    <ul class="nav-links">
-      <li><a href="#home" class="nav-link">Inicio</a></li>
-      <li><a href="#about" class="nav-link">Sobre mí</a></li>
-      <li><a href="#projects" class="nav-link">Proyectos</a></li>
-      <li><a href="#contact" class="nav-link">Contacto</a></li>
-    </ul>
-  </nav>
+      <div class="menu-toggle">☰</div>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="info-card fade">
-      <h1>Hola, soy <span>Nicolas Mendieta</span></h1>
-      <p>
-        Desarrollador Full Stack enfocado en crear aplicaciones web modernas,
-        funcionales y con una experiencia de usuario limpia.
-      </p>
-      <div class="buttons">
-        <a href="#projects" class="btn primary">Ver proyectos</a>
-        <a href="#contact" class="btn secondary">Contacto</a>
-      </div>
-    </div>
-  </section>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Inicio</a></li>
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="about-container fade">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-container fade">
+        <div class="info-card">
+          <h1>Hola, soy <span>Nicolas Mendieta</span></h1>
 
-      <div class="content-card">
-        <h2>Sobre mí</h2>
-        <p>
-          Soy un desarrollador Full Stack con formación en mantenimiento
-          electromecánico industrial, apasionado por crear soluciones web
-          completas y eficientes. Mi principal lenguaje es Python, con
-          experiencia en JavaScript, React, Express.js, HTML, CSS y API REST.
-        </p>
-      </div>
+          <h2 class="typing">
+            <span id="typing-text"></span>
+            <span class="cursor">|</span>
+          </h2>
 
-      <div class="content-card">
-        <h2>Habilidades</h2>
-        <div class="skills-grid">
-          <div class="skill-badge">Python</div>
-          <div class="skill-badge">JavaScript</div>
-          <div class="skill-badge">React</div>
-          <div class="skill-badge">Express.js</div>
-          <div class="skill-badge">HTML</div>
-          <div class="skill-badge">CSS</div>
-          <div class="skill-badge">API REST</div>
-          <div class="skill-badge">Java</div>
+          <p>Creo aplicaciones web modernas y eficientes.</p>
+
+          <div class="buttons">
+            <a href="#projects" class="btn primary">Ver proyectos</a>
+            <a href="#contact" class="btn secondary">Contacto</a>
+          </div>
+        </div>
+
+        <div class="avatar">
+          <img src="/imagenes/nicolas.jpg" alt="Nicolas" />
         </div>
       </div>
 
-    </div>
-  </section>
+      <div class="scroll-indicator"></div>
+    </section>
 
-  <!-- PROJECTS -->
-  <section class="projects" id="projects">
-    <div class="content-card fade">
-      <h2>Proyectos</h2>
-
-      <div class="projects-grid">
-        <div class="project-card fade">
-          <h3>HospeDATE</h3>
-          <p>Plataforma de gestión hospitalaria desarrollada en equipo.</p>
-          <a href="https://github.com/Generatino2025/hospeDATE-grupo-08"
-             target="_blank" class="btn secondary">GitHub</a>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-container fade">
+        <div class="content-card">
+          <h2>Sobre mí</h2>
+          <p>
+            Desarrollador Full Stack con experiencia en Python, React, Express y
+            APIs REST y demas herramientas de desarrollo web para el la comididad del usuario y la eficiencia del cliente.
+          </p>
         </div>
 
-        <div class="project-card fade">
-          <h3>Tenazos</h3>
-          <p>Proyecto colaborativo enfocado en la cracion de promts para lograr una meta mediante IA.</p>
-          <a href="https://electromecaniconicolas-dot.github.io/clima/"
-             target="_blank" class="btn secondary">GitHub</a>
+        <div class="content-card">
+          <h2>Habilidades</h2>
+
+          <div class="skills-grid">
+            <div class="skill-badge">Python</div>
+            <div class="skill-badge">JavaScript</div>
+            <div class="skill-badge">React</div>
+            <div class="skill-badge">Express</div>
+            <div class="skill-badge">HTML</div>
+            <div class="skill-badge">CSS</div>
+            <div class="skill-badge">APIs REST</div>
+            <div class="skill-badge">SQL</div>
+            <div class="skill-badge">Git</div>
+            <div class="skill-badge">Phpmyadmin</div>
+
+
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="content-card fade">
-      <h2>Contacto</h2>
-      <p>¿Te interesa trabajar conmigo o hablar sobre un proyecto?</p>
-      <div class="buttons">
-        <a href="mailto:electromecaniconicolas@gmail.com" class="btn primary">Email</a>
-        <a href="https://github.com/electromecaniconicolas-dot"
-           target="_blank" class="btn secondary">GitHub</a>
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="content-card fade">
+        <h2>Proyectos</h2>
+
+        <div class="projects-grid">
+          <a href="https://github.com/Generatino2025/hospeDATE-grupo-08" target="_blank" class="project-card">
+            <h3>HospeDATE</h3>
+            <p>Plataforma hospitalaria.</p>
+          </a>
+
+          <a href="https://electromecaniconicolas-dot.github.io/clima/" target="_blank" class="project-card">
+            <h3>Clima</h3>
+            <p>Aplicación meteorológica con APIs.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="content-card fade">
+        <h2>Contacto</h2>
+        <p>¿Te interesa trabajar conmigo?</p>
+
+        <div class="buttons">
+          <a href="mailto:electromecaniconicolas@gmail.com" class="btn primary"
+            >Email</a
+          >
+          <a
+            href="https://github.com/electromecaniconicolas-dot"
+            target="_blank"
+            class="btn secondary"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/nicolas-mendieta-restrepo-full-stack/"
+            target="_blank"
+            class="btn secondary"
+            >LinkedIn</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal" id="projectModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
       </div>
     </div>
-  </section>
 
-  <footer>
-    © <span id="year"></span> Nicolas Mendieta
-  </footer>
+    <footer>© <span id="year"></span> Nicolas Mendieta</footer>
 
-  <script src="/app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
